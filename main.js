@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const scrollFade = document.querySelector(".header");
 const text = scrollFade.querySelector(".header-content");
 var aboutText = document.getElementById("about-text");
+var aboutTextHeader = document.getElementById("section-header");
 
 window.addEventListener("scroll", () => {
     const scrollPosition = window.scrollY;
@@ -41,9 +42,12 @@ window.addEventListener("scroll", () => {
     // Opaklık değerini hesapla
     const opacity = 1 - (scrollPosition / (windowHeight * 0.7));
     const fontSize = 14 + (scrollPosition / (windowHeight * 0.7)) * 10;
+    const headerFontSize = 26 + (scrollPosition / (windowHeight * 0.7)) * 10;
     if(fontSize < 23)
         aboutText.style.fontSize = `${fontSize}px`;
+    if(headerFontSize < 40) {
+        aboutTextHeader.style.fontSize = `${headerFontSize}px`;
+    }
     text.style.transform = `translateY(-${translateY}px)`;
     text.style.opacity = opacity > 0.2 ? opacity : 0;
-    console.log((scrollPosition / (windowHeight * 0.7)));
 });

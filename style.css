@@ -37,6 +37,7 @@ justify-content: center;
 
 .custom-navbar {
     padding: 15px 0px 15px 0px;
+    background-color: rgb(233, 236, 250)
 }
 
 .custom-navbar .nav .item .link {
@@ -50,9 +51,7 @@ text-decoration: none;
 .item:hover {
     opacity: 60%;
 }
-.item {
-    transition: all 0.5s ease;
-}
+
 
 .space {
     height: 15vh;
@@ -79,10 +78,6 @@ header {
 }
 
 .color-container {
-    background: rgb(223,77,203);
-    background: linear-gradient(180deg, #c38d9e, rgba(255,255,255,0) 100%); 
-    background: rgb(119,146,177);
-    background: linear-gradient(180deg, rgba(119,146,177,1) 0%, rgba(255,255,255,0) 100%);
     background: rgb(144,171,203);
     background: linear-gradient(180deg, rgba(144,171,203,1) 0%, rgba(255,255,255,0) 100%);
     position: relative;
@@ -106,8 +101,7 @@ header {
     max-width: 20%;
     min-width: 20%;
 }
-#about-text {
-    font-family: 'League Spartan', sans-serif;
+#about-text, .exp-text {
     font-family: 'Oswald', sans-serif;
     color: rgb(7, 97, 92);
     font-size: 18px;
@@ -130,11 +124,18 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 100;
+    
     letter-spacing: 10px;
 
 }
+.line {
+    border: #686767;
+    border-width: 0.5px;
+    border-style: solid;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 .header {
- /* position: fixed; */
 height: 20px;
 transition: transform 0.5s, opacity 0.5s;
 }
@@ -193,12 +194,77 @@ section {
 
 h2 {
     font-family: 'League Spartan', sans-serif;
-
-    font-size: 24px;
+    color: #7576b1;
+    color:rgb(64, 78, 94);
+    font-size: 40px;
+}
+.projects-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.experience-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container-proj {
+    display: block;
+}
+.container-proj .project{
+    margin: 25px 25px 25px 25px;
+}
+.project {
+    margin: 10px 0;
+    background-color: #f8eff2;
 }
 
-.project {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px 0;
+.card {
+    background: rgb(250, 252, 255);
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+    text-align: left;
+    transition: all 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card:hover {
+    transform: scale(1.07);
+}
+
+h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+}
+.company {
+    display: flex;
+}
+#dogus {
+    width: 120px;
+    height: 50px;
+    background-image: url("assets/dogus2.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#piworks {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    background-image: url("assets/piworks.webp");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#avkar {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 80px;
+    background-image: url("assets/avkar.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#comp-info {
+    text-align: left;
 }
