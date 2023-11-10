@@ -21,9 +21,8 @@ background-color: #fff;
 .container {
 width: 100%;
 margin-right: auto;
-margin-left: auto;
-justify-content: center;
 }
+
 .container-about {
     display: flex;
     justify-content: center;
@@ -37,16 +36,25 @@ justify-content: center;
 
 .custom-navbar {
     padding: 15px 0px 15px 0px;
-    background-color: rgb(233, 236, 250)
+    height: 7vh;
+    background-color: rgb(233, 236, 250);
 }
 
-.custom-navbar .nav .item .link {
+.custom-navbar .nav .item .link  {
+
 color: #000000;
 font-family: 'Roboto Slab', serif;
 text-decoration: none;
+
 }
+
 .item {
     transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+}
+.link {
+    padding: 10px 20px;
 }
 .item:hover {
     opacity: 60%;
@@ -107,16 +115,48 @@ header {
     font-size: 18px;
     
 }
+.icon {
+    color: #000000;
+    font-size: 30px;
+}
+.custom-navbar .icon {
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .custom-navbar .icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav {position: relative;}
+
+    .nav li{
+        display: block;
+    }
+    .nav .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .photo {
         max-width: 30%;
         min-width: 30%;
     }
+
   }
 @media only screen and (max-width: 800px) {
     .photo {
         max-width: 40%;
         min-width: 40%;
+    }
+    .link {
+        padding: 0;
     }
   }
 .header-subtitle {
@@ -337,10 +377,10 @@ button {
   }
 
   .copyright {
-    background-color: rgb(192, 220, 254);
+    background-color: rgb(125, 156, 195);
     margin: 0;
     padding: 0;
-    height: 4vh;
+    height: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -349,8 +389,13 @@ button {
 
   h5 {
     margin: 0;
-  }
+    font-size: 16px;
+    color: white;
 
+}
+.submitButton {
+    font-size: 20px;
+}
   .section-end {
     font-size: 70px;
     text-align: center;
@@ -361,4 +406,20 @@ button {
     letter-spacing: 50px;
   }
 
-  
+  #downloadButton {
+    background-color: rgb(120, 143, 172);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+  }
+
+#downloadButton:hover {
+    transform: scale(1.1);
+}
+
+
+  #downloadButton:active {
+    top: 1px;
+  }

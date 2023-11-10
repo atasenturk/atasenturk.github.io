@@ -51,3 +51,28 @@ window.addEventListener("scroll", () => {
     text.style.transform = `translateY(-${translateY}px)`;
     text.style.opacity = opacity > 0.2 ? opacity : 0;
 });
+
+
+document.getElementById('downloadButton').addEventListener('click', function() {
+    // CV dosyanızın yolunu belirtin
+    var cvPath = 'assets/cv.pdf';
+
+    // Anchor elemanı oluşturun
+    var link = document.createElement('a');
+    link.href = cvPath;
+
+    // Dosya adını belirtin (isteğe bağlı)
+    link.download = 'cv.pdf';
+
+    // Anchor elemanını tıklayarak indirme işlemini başlatın
+    link.click();
+});
+
+function clickNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+}
