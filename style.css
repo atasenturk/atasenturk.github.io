@@ -203,6 +203,11 @@ h2 {
     justify-content: center;
     text-align: center;
 }
+.contact-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .experience-container {
     display: flex;
     justify-content: center;
@@ -218,6 +223,7 @@ h2 {
     margin: 10px 0;
     background-color: #f8eff2;
 }
+
 
 .card {
     background: rgb(250, 252, 255);
@@ -268,3 +274,91 @@ h4 {
 #comp-info {
     text-align: left;
 }
+
+.contact-container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'League Spartan', sans-serif;
+}
+#contact {
+    width: 75vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(105, 128, 156);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Input container */
+.input-container {
+    text-align: left;
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  .input-field, textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    font-size: 19px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  
+  #required {
+    padding-top: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+    color:red;
+  }
+
+  textarea {
+    outline: none;
+  }
+
+  .copyright {
+    background-color: rgb(192, 220, 254);
+    margin: 0;
+    padding: 0;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  h5 {
+    margin: 0;
+  }
+
+  .section-end {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .section-text {
+    font-family: 'League Spartan', sans-serif;
+    letter-spacing: 50px;
+  }
+
+  

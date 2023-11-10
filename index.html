@@ -114,7 +114,7 @@
                           <p class="exp-text">1 aylık eğitimin ardından, .Net Core ile 3 projede kütüphane değişikliği ile hızlandırma görevini yürüttüm</p>
                         </div>
                       </div>
-                      - <div class="col-sm">
+                       <div class="col-sm">
                         <div class="card">
                             <div class="company" class="row">
                                 <h2 class="col-9" id="comp-info">Avkar Yazılım</h2>
@@ -148,13 +148,37 @@
             
         </section>
     </div>
-
+    <div class="section-end">
+        <span class="section-text">...</span>
+    </div>
+    <div class="contact-container">
     <section id="contact">
-        <h2>İletişim</h2>
-        <p>E-posta: [E-posta adresiniz]</p>
-        <p>Sosyal Medya: [Sosyal medya profilleriniz]</p>
-    </section>
+        <h2 id="contact-header">İletişim</h2>
+            <form id="contactForm">
+                <div class="input-container">
+                    <input placeholder="İsim Soyisim" class="input-field" type="text" id="name", name="name">
+                  </div>
+
+                <div class="input-container">
+                    <label id="required" for="name">*</label>
+                    <input placeholder="E-posta" class="input-field" type="email" id="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <label id="required" for="name">*</label>
+                    <textarea placeholder="Mesajınız" id="message" name="message" required></textarea>
+                </div>
+
+    
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </div>
     <script src="main.js"></script>
+
+    <div class="copyright">
+        <h5>2023, Ahmet Ata Şentürk</h5>
+        
+    </div>
 
 </body>
 </html>
